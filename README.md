@@ -9,7 +9,18 @@ Open source Ruby on Rails based Learning Record Store (http://en.wikipedia.org/w
 Current Status
 --------------
 
-### Warning
+### Setup
+- `bundle install`
+- `brew install mongodb`
+- `brew services start mongodb`
+- `cp config/mongoid.yml.template config/mongoid.yml`
+- `rake db:setup`
+- `rails s`
 
-Please regard this as pre-alpha software. It is NOT complete yet and is not usable!
+### Deps
+
+You need mongodb running so install via brew and start it as a service with
+`brew services start mongodb`
+
+You can stop it again with `brew services stop mongodb`
 
